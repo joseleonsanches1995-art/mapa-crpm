@@ -1,0 +1,31 @@
+{
+  "name": "mapa-crpm",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Mapa interativo das circunscrições CRPM (Brigada Militar) do RS — Decreto 57.060/2023",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "seed:json": "tsx scripts/build-seed.ts",
+    "seed:db": "tsx scripts/seed-db.ts"
+  },
+  "dependencies": {
+    "maplibre-gl": "^4.7.1",
+    "next": "^15.1.0",
+    "pg": "^8.13.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-map-gl": "^7.1.7"
+  },
+  "devDependencies": {
+    "@types/geojson": "^7946.0.16",
+    "@types/node": "^22.10.0",
+    "@types/pg": "^8.11.10",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

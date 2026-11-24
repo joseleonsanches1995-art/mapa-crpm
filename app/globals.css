@@ -1,0 +1,83 @@
+:root {
+  --bg: #0f1a14;
+  --panel: rgba(18, 32, 24, 0.92);
+  --panel-border: rgba(180, 210, 170, 0.18);
+  --text: #e8f0e4;
+  --muted: #9bb39a;
+  --accent: #6fbf73;
+  --accent-strong: #3d8f4a;
+  --danger-mute: #6b7a6e;
+  --input-bg: rgba(0, 0, 0, 0.28);
+  --hover: rgba(255, 255, 255, 0.06);
+  --suggestion-bg: rgba(0, 0, 0, 0.35);
+  --row-border: rgba(255, 255, 255, 0.06);
+  --swatch-border: rgba(255, 255, 255, 0.25);
+  --glow-a: rgba(61, 143, 74, 0.22);
+  --glow-b: rgba(20, 60, 40, 0.45);
+  --font-display: "Segoe UI", "Helvetica Neue", sans-serif;
+  --font-body: "Segoe UI", "Helvetica Neue", sans-serif;
+}
+
+:root[data-theme="light"] {
+  --bg: #f3f6f1;
+  --panel: rgba(255, 255, 255, 0.94);
+  --panel-border: rgba(40, 70, 45, 0.16);
+  --text: #1a2a1c;
+  --muted: #5a6d5c;
+  --accent: #247233;
+  --accent-strong: #1d5c29;
+  --danger-mute: #6b7a6e;
+  --input-bg: #ffffff;
+  --hover: rgba(20, 40, 24, 0.06);
+  --suggestion-bg: #ffffff;
+  --row-border: rgba(20, 40, 24, 0.08);
+  --swatch-border: rgba(20, 40, 24, 0.22);
+  --glow-a: rgba(111, 191, 115, 0.35);
+  --glow-b: rgba(180, 210, 170, 0.55);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+}
+
+body {
+  min-height: 100vh;
+}
+
+a {
+  color: var(--accent);
+}
+
+button,
+select,
+input {
+  font: inherit;
+}
+
+.maplibregl-popup-content {
+  background: var(--panel) !important;
+  color: var(--text) !important;
+  border: 1px solid var(--panel-border);
+  border-radius: 8px !important;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35) !important;
+  padding: 10px 12px !important;
+  font-size: 13px;
+}
+
+.maplibregl-popup-tip {
+  border-top-color: var(--panel) !important;
+}
+
+.maplibregl-ctrl-attrib a {
+  color: #333;
+}
